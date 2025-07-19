@@ -107,6 +107,12 @@ Icon Aplikasi
 Splash Screen
 <img width="1512" alt="Screenshot 2025-05-17 at 10 27 03" src="https://github.com/user-attachments/assets/3caf3036-011c-46db-a5e0-eb3c9a7d59f9" />
 
+Register
+<img width="3024" height="1888" alt="image" src="https://github.com/user-attachments/assets/4eabfc6b-237a-43d1-91f3-3c5501bebc75" />
+
+Login
+<img width="3002" height="1886" alt="image" src="https://github.com/user-attachments/assets/8f99d03f-6753-43b7-a522-65d9f4ae2ca7" />
+
 Loading Shimmber List Berita
 <img width="1512" alt="Screenshot 2025-05-17 at 10 27 17" src="https://github.com/user-attachments/assets/3498e466-0f37-46b7-b8b8-07f68f593e27" />
 
