@@ -44,16 +44,12 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.BeritaView
                 .placeholder(R.drawable.image_rounded)
                 .into(holder.image);
 
-
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, DetailActivity.class);
             intent.putExtra("url", berita.getNewsUrl());
             context.startActivity(intent);
         });
-
-
     }
-
 
     @Override
     public int getItemCount() {

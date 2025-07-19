@@ -1,0 +1,62 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="Selamat Datang"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
+            android:textColor="#333333"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
+            android:textColor="#333333"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#007BFF"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_button" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:text="Daftar Akun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#007BFF"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+</ScrollView>

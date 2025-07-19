@@ -1,5 +1,6 @@
 package com.example.aplikasiberita;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import android.app.Activity;
@@ -16,8 +17,21 @@ public class SplashActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+
         new Handler().postDelayed(() -> {
-            startActivity(new Intent(SplashActivity.this, MainActivity.class));
+            SharedPreferences prefs = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+            boolean isLoggedIn = prefs.getBoolean("isLoggedIn", false);
+
+            if (isLoggedIn) {
+                // Langsung ke Home
+                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                startActivity(intent);
+            } else {
+                // Tampilkan Login
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+
             finish();
         }, SPLASH_TIME);
     }
